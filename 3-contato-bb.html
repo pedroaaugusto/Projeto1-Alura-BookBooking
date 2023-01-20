@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato BookBooking</title>
+
+    <link rel="stylesheet" href="0-reset.css">
+    <link rel="stylesheet" href="3-stl-contato-bb.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="caixa-nav">
+            <h1 class="img-nav"><img class="logo-h1" src="2-logo-bb-2.png" alt="logomarca-bookbooking-escrita"></h1>
+
+            <nav class="txt-nav">
+                <ul>
+                    <li><a href="1-home-bb.html">Home</a></li>
+                    <li><a href="2-produtos-bb.html">Produtos</a></li>
+                    <li><a href="3-contato-bb.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input id="nomesobrenome" type="text" class="input-padrao" required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="tel" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+            
+            <fieldset>    
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input id="radio-email" name="contato" value="email" type="radio"> Email</label>
+                
+                <label for="radio-telefone"><input id="radio-telefone" name="contato" value="telefone" type="radio"> Telefone</label>
+                
+                <label for="radio-whatsapp"><input id="radio-whatsapp" name="contato" value="whatsapp" type="radio" checked> WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidade por Email?</label>
+
+            <input type="submit" value="Enviar Formulário" class="enviar">
+        </form>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <img class="img-foot" src="2-logo-bb-1.png" alt="logomarca-bookbooking">
+            <p class="copyright">&copy; Copyright Book Booking - 2022</p>
+        </div>    
+    </footer>
+</body>
+</html>

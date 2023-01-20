@@ -1,0 +1,187 @@
+
+body {
+    font-family: 'Prata', serif;
+}
+
+/*começo CSS Header*/
+header {
+    background-color: rgb(236, 231, 236);
+    padding: 15px 0;
+
+}
+
+.caixa-nav {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+.logo-h1 {
+    width: 350px;
+    height: 350px;
+}
+
+nav {
+    position:absolute;
+    top: 175px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: rgb(214,0,89);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #80204b;
+    text-decoration: underline;
+}
+/*fim CSS Header*/
+
+
+/*começo CSS Main*/
+
+.home {
+    width: 940px;
+    margin: 0px auto;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.home-txt {
+    width: 43%;
+    
+}
+
+.titulo-principal {
+    font-size: 2em;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.home-txt p {
+    margin: 0 0 1em;
+
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "⁕";
+}
+
+.home-img {
+    width: 43%;
+}
+
+.home-a-mais {
+    width: 940px;
+    margin: 0px auto;
+}
+
+.mapa {
+    padding: 1em 0 2em;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.home-a-mais2 {
+    width: 560px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.iframe-video {
+    box-shadow: 10px 10px 5px #000000;
+}
+/*fim CSS Main*/
+
+
+/*começo CSS Footer*/
+footer{
+    text-align: center;
+    background: url(2-rodape.png);
+    padding: 40px;
+}
+
+.copyright {
+    color:rgb(214,0,89);
+    font-size: 13px;
+}
+/*fim CSS Footer*/
+
+@media screen and (max-width: 480px) {
+    .caixa-nav, .home, .home-a-mais, .home-a-mais2, .rodape{
+        width: auto;
+    }
+
+    /*começo CSS Header cel*/
+
+    .caixa-nav, nav{
+        position: static;
+    }
+
+    .img-nav, .txt-nav{
+        text-align: center;
+    }
+
+    nav li{
+        margin: 0 7.5px 10px 7.5px;
+    }
+
+    /*fim CSS Header cel*/
+
+    /*começo CSS Main cel*/
+
+    .home{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-txt, .mapa{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .home-img{
+        width: 100%;
+    }
+
+    iframe, .iframe-mapa, .iframe-video{
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    /*fim CSS Main cel*/
+
+    /*começo CSS Footer cel*/
+
+    .img-foot{
+        width: 100%;
+    }
+
+    /*fim CSS Footer cel*/
+
+}

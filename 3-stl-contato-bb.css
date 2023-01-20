@@ -1,0 +1,155 @@
+body {
+    font-family: 'Prata', serif;
+}
+
+header {
+    background-color: rgb(236, 231, 236);
+    padding: 15px 0;
+
+}
+
+.caixa-nav {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+.logo-h1 {
+    width: 350px;
+    height: 350px;
+}
+
+nav {
+    position:absolute;
+    top: 175px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: rgb(214,0,89);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #80204b;
+    text-decoration: underline;
+}
+
+/* inicio css formulario */
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form p, fieldset {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 7px;
+    width: 50%;
+}
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: rgb(214,0,89);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.8s background;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: rgb(97, 4, 43);
+    transform: scale(1.2);
+}
+
+/* fim css formulario */
+
+footer{
+    text-align: center;
+    background: url(2-rodape.png);
+    padding: 40px;
+}
+
+.copyright {
+    color:rgb(214,0,89);
+    font-size: 13px;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa-nav, main, .rodape{
+        width: auto;
+    }
+
+    /*começo CSS Header cel*/
+
+    .caixa-nav, nav{
+        position: static;
+    }
+
+    .img-nav, .txt-nav{
+        text-align: center;
+    }
+
+    nav li{
+        margin: 0 7.5px 10px 7.5px;
+    }
+
+    /*fim CSS Header cel*/
+
+    /*começo CSS Main cel*/
+
+    form{
+        margin: 30px 10px;
+    }
+
+    .input-padrao{
+        width: 90%;
+        margin: 10px auto 20px;
+    }
+
+    legend{
+        margin: 0 0 10px 0;
+    }
+
+    .enviar{
+        margin: 0 30%;
+    }
+
+    /*fim CSS Main cel*/
+
+    /*começo CSS Footer cel*/
+
+    .img-foot{
+        width: 100%;
+    }
+
+    /*fim CSS Footer cel*/
+}

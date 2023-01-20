@@ -1,0 +1,158 @@
+body {
+    font-family: 'Prata', serif;
+}
+
+header {
+    background-color: rgb(236, 231, 236);
+    padding: 15px 0;
+
+}
+
+.caixa-nav {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+.logo-h1 {
+    width: 350px;
+    height: 350px;
+}
+
+nav {
+    position:absolute;
+    top: 175px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: rgb(214,0,89);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #80204b;
+    text-decoration: underline;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+}
+
+.produtos li {
+    display: inline-block;
+    width: 30%;
+
+    text-align: center;
+    vertical-align: top;
+    background-color: rgb(236, 231, 236);
+    padding: 15px;
+    margin: 0 1.5%;
+    box-sizing: border-box;
+    border: 2px solid rgb(214,0,89);
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color:#80204b;
+}
+
+.produtos li:active {
+    border-color: rgb(242 296 114);
+}
+
+.produtos li:hover h2 {
+    font-size: 33px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(214,0,89);
+
+}
+
+.img-produtos {
+    width: 250px;
+    height: 250px;
+    padding: 15px 0;
+}
+
+.dsc-produtos {
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.prc-produtos {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    background: url(2-rodape.png);
+    padding: 40px;
+}
+
+.copyright {
+    color:rgb(214,0,89);
+    font-size: 13px;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa-nav, .produtos, .rodape{
+        width: auto;
+    }
+
+    /*começo CSS Header cel*/
+
+    .caixa-nav, nav{
+        position: static;
+    }
+
+    .img-nav, .txt-nav{
+        text-align: center;
+    }
+
+    nav li{
+        margin: 0 7.5px 10px 7.5px;
+    }
+
+    /*fim CSS Header cel*/
+    
+    /*começo CSS Main cel*/    
+
+    .produtos li{
+        display:  block;
+        width: 90%;
+        margin: 20px auto;
+        
+    }
+
+    .img-produtos {
+        width: auto;
+    }
+
+    /*fim CSS Main cel*/    
+
+    /*começo CSS Footer cel*/
+
+    .img-foot{
+        width: 100%;
+    }
+
+    /*fim CSS Footer cel*/        
+}
